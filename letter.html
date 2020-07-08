@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="">
+    <meta name="description" content="Application Letter">
+    <link rel="stylesheet" href="letter.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Apllication Letter</title>  
+</head>
+<body>
+    <div class="side1">
+        <div class="slide">
+            <button class="toggle">CLICK HERE TO EDIT THE LETTER <i class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+        <div class="side-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quasi id provident saepe explicabo et sunt voluptates aspernatur adipisci eum, quisquam animi corrupti, perferendis velit illum sed. Adipisci, nesciunt nam?</p>
+        </div>
+        
+       <form class="form" >
+            <div class="d-closeBtn">&times;</div>
+        <label class="op">EDIT THE LETTER HERE</label> <br><br> <br>
+        <label for="" id="on">Input your position</label>
+        <input type="text" placeholder="Position apply for in uppercases" id="box1" required>
+        <label for="">Name of Institution</label>
+        <input type="text" placeholder="Name of Institution" id="box2" required><br><br>
+        <label for="">Year attended</label> <br>
+        <input type="text" placeholder="MM-DD-YY" id="box3" required> 
+        <select class="state" id="myState">
+                <option value="Anambra" selected>State</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Imo">Imo</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Abia">Abia</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Abuja">Abuja</option>
+            </select><br>
+        <br>
+        <label for="">Primary School Attended</label>
+        <input type="text" placeholder="Primary School Attended" id="box4" required>
+        
+
+
+        <input id="btn" type="button" onclick="addValue()" value="Submit">
+      
+       </form>
+         
+       <button id="printBtn"  onclick="printContent('a-bed')">PRINT LETTER</button>
+
+    </div>
+    <div class="bed" id="a-bed">
+        <div class="d-info"><h4>Latest Info</h4></div>
+       <div class="d-scroll"><p class="mark" id="d-mark"></p></div>
+       <div class="W-mark"><p>Confidential</p></div>
+    <!--i can also use this for html scrolling   <marquee behavior="" direction=""></marquee> -->
+    <div class="side" contentEditable>
+        <p id="back">17, Agumbiade Street,</p>
+        <p id="back2">Onipanu,</p>
+        <p id="back3">Somolu Local Government Area, Lagos.</p> <p id="back4">24th April, 2020.</p>
+    </div>
+
+    <div class="bar">
+        <p contentEditable>
+            The Personnel Manager, <br>
+            Pilgrim Supertech Limited, <br>
+            12, Kadiri Street, <br>
+            Kirikiri Town, <br>
+            Lagos.
+        </p>
+    </div>
+    <div class="">
+        <p class="salute">Dear Sir,</p>
+        <h3 class="salute"><u>APPLICAION FOR THE POST OF <span id="lbuser">CONTRUCTION MANAGER</span></u></h3>
+    </div>
+    <div class="main">
+      <p>With respect to you advertisement on a National newspaper for the vancancy
+          on the position of a <span id="t3">Contruction Manager</span> dated 1st March, 2020, I humbly apply
+          for the position.
+      </p>
+      <p>I am a graduate of <span id="t2" contentEditable>Yaba Colleged of Technology</span> on <span id="t1">November 25th, 2020</span> With
+          a distintion; and a well trained experience during industrial training program
+          for both the four months of break and one year of indutrial training (IT).
+      </p>
+      <p>I attended my Primary school at <span id="t6">holiness Nursery and Primary school,</span> <span id="t7">Otukpo Benue</span> State, where i got my First School Leaving Certificate. I furthered to government Day Secondary School, Otukpo, Benue State and acquired my NECO and WAECE with a good grade dated fro year 2003 to 2008. I later further my educcation at <span id="t5">Yaba College of Education</span> where i graduated with distinction in Computer Scince and also the best graduating students of Computer Science dated from 2009 to 2013 including the one year and four month industrial tarining program.</p>
+      <p>During my four month training program i was lucky and God so kind applied for the rest of IT in Julius Berger Contruction company wherfe i was accepted within the period, and i learnt a lot of such as the terms and conditions in construction company. Here i was taught on how to use most of the machine for construction and also was giving fatherly training from my Boss whom i was serving under him. When the perved of my IT elapse i was giving an approval letter from the management of Julius Berger to come anytime am through with my Ordinary Diploma(ND) program and continue with them.</p>
+      <p>At my one year industrail training period i also joined them with respect to approval given to me from my four months period. Here i gained a lot in construction and management because my Boss was later transfer to Portharcour and i was only one handed over the management process to, also i was the only one who was taught on how the company operate due to relationship between both of us.</p>
+      <p>With the above reasons stated, i am sure that your company will never regrate having me as their manager and also giving some of your staff preferencial training on the operation of so manay machines which i got the knowledge already.</p>
+      <p>Thanks for your co-operation</p>
+      <p>Yours faithfully,</p>
+      <p id="get">Odims Frank Ifeanache</p>
+    </div>
+  </div>
+
+ 
+
+  
+</body>
+<script src="letter.js"></script>
+</html>

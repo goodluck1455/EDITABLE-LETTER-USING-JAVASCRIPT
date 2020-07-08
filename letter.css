@@ -1,0 +1,258 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+.side {
+    margin-left: 54%;
+    
+}
+.d-info{
+    position: absolute;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    top: -8px;
+    left: 27px;
+}
+.bar{
+    margin-left: -53px;
+}
+
+#back{
+    padding-right: 20%;
+    color: brown;
+}
+#back2{
+    padding-right: 28.5%;
+    margin-top: -3%;
+}
+#back3{
+    margin-top: -3%;
+    padding-right: 8.3%;
+}
+
+#back4{
+    padding-right: 23.5%;
+    margin-top: -3%;
+}
+.bar{
+    margin-left: 2%;
+}
+.salute{
+    margin-left: 2%;
+    font-size:14px;
+}
+.main{
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: justify;
+   
+}
+.bed{
+    border: 3px rgb(46, 11, 141) solid;
+    margin-left: 1%;
+    margin-right: 30%;
+    box-shadow: 0px 0px 9px rgb(158, 155, 153);
+    
+}
+.mark{
+    color:rgb(46, 11, 141);
+    animation: scrolling 13s linear infinite;
+    margin-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: -2;
+    position: relative;
+    width: 100%;
+    
+}
+.d-scroll{
+    border: 1px solid rgb(46, 11, 141);
+    overflow: hidden;
+    height: 24px;
+    position: relative;
+    z-index: -2;
+}
+
+.d-scroll::before{
+    content: "";
+    background-color: rgb(46, 11, 141);
+    width:100%;
+    top: 0;
+    right: 90%;
+    height: 24px;
+    position: absolute;
+    overflow: hidden;
+    transform: skew(38deg);
+}
+.d-scroll::after{
+    content: "";
+    background-color:  rgb(46, 11, 141);
+    width:100%;
+    top: 0;
+    right: 90.6%;
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
+    transform:skew(-38deg);
+}
+
+@keyframes scrolling {
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+    200%{transform: translateX(-50%)}
+}
+
+.side1{
+    background-color: rgb(50, 67, 104); 
+    margin-left: 71%;
+    height: 51.2rem;
+    position: absolute;
+    padding-right: 6px;
+    width: 27.5%;
+    
+    
+}
+.side1 form{
+padding-left: 6px;
+border: 6px solid white;
+margin-left:8%;
+margin-top:-2rem;
+padding-right: 1.5rem;
+height: 23rem;
+color: white;
+margin-right: 7%;
+background-color: rgb(9, 9, 95);
+box-shadow:0px 2px 12px rgb(44, 37, 33);
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 1s ease-in-out;
+}
+
+
+.open {
+transform: scaleX(1)!important;
+}
+
+
+.side1 form input{
+    padding: 5px 5px;
+    width: 100%;
+}
+.op{
+    
+    padding-right: 0rem;
+    margin-left: 2rem;
+    width: 11rem;
+    font-size:14px;
+   font-weight:bold;
+   text-align:center;
+   padding-top:1rem;
+   position: absolute;
+}
+#on{
+    padding-top:5rem;
+    
+}
+
+#box1{
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+}
+#box2{
+    padding-bottom: 5px;
+}
+#box3{
+ width: 70%; 
+}
+.state{
+    position: absolute;
+    padding: 6.2px;
+    margin-left: 4px;
+    margin-right: 7px;
+    width: 80px;
+}
+
+#btn{
+    padding:8px;
+    margin-top:2rem;
+    color:blue;
+    width:106%;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+}
+#btn:hover{
+    background-color:blue;
+    color:white;
+    font-weight:bold;
+}
+
+.W-mark{
+    position: absolute;
+    transform: rotate(-60deg);
+    color:rgb(9, 9, 95);
+    left: 15%;
+    top: 40%;
+    z-index: -4;
+    opacity: .1;
+    font-size: 650%;
+}
+
+.slide{
+    top: 20px;
+    left: 60px;
+    position: absolute;
+}
+.slide button{
+    background-color:rgb(9, 9, 95);
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    font-size: 14px;
+    border-radius: 10px;
+  
+}
+
+.side-info{
+    background-color: aliceblue;
+    border: 3px solid rgb(9, 9, 95); 
+    text-align: center;
+    position: relative;
+    margin-left:8%;
+    margin-right: 7%;
+    top: 30%;
+}
+
+.d-closeBtn{
+    color: rgb(14, 12, 12);
+    background-color: rgb(243, 239, 239);
+    border: 1px solid  rgb(9, 9, 95);
+    font-size: 150%;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 54%;
+    text-align: center;
+    width:7%;
+    position: absolute;
+    left: 98%;
+    top: -8%;
+    display: none;
+}
+
+#printBtn {
+   margin-top: 5rem;
+   background-color: rgb(9, 9, 95);
+   margin-left: 29%;
+   width: 40%;
+   color: wheat;
+   font-weight: bolder;
+   padding: 10px 10px;
+   border: 3px solid white;
+   cursor: pointer;
+   font-size: 95%;
+}
