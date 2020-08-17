@@ -2,7 +2,7 @@
 function nameAdd(){
 let name = prompt("Please input your name to be the writer of the letter");
 document.getElementById("get").innerHTML = ( "" +name);
-let myText = " You are welcome to this page with an editable letter using JS. This is my project on how i can use JS to manipulate HTML document.";
+let myText = `You are welcome to this page with an editable letter using JS. This is my project on how i can use JS to manipulate HTML document.`;
 
 document.getElementById("d-mark").innerHTML = name + myText;
 
